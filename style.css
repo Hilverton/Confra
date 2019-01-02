@@ -13,7 +13,7 @@ h1{
   color: #fff;
   font-size: 60px;
   position: absolute;
-  top: 15%;
+  top: 100px;
   left: 50%;
   transform: translate(-50%,-50%);
   background-image: url('img/cor.jpg');
@@ -28,7 +28,7 @@ h3{
   color: #fff;
   font-size: 40px;
   position: absolute;
-  top: 35%;
+  top: 230px;
   left: 50%;
   transform: translate(-50%,-50%);
   background-image: url('img/animated_text_fill.png');
@@ -43,7 +43,7 @@ h4{
   color: #fff;
   font-size: 40px;
   position: absolute;
-  top: 70%;
+  top: 440px;
   left: 50%;
   transform: translate(-50%,-50%);
   background-image: url('img/cores-png-3.png');
@@ -61,7 +61,7 @@ h4{
 }
 .middle{
   position: absolute;
-  top: 62%;
+  top: 380px;
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
