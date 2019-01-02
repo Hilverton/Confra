@@ -5,6 +5,7 @@ body{
   margin: 0;
   padding: 0;
   background: #000;
+  width: 100%;
 }
 h1{
   text-transform: uppercase;
