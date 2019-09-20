@@ -32,7 +32,7 @@ h3{
   left: 50%;
   transform: translate(-50%,-50%);
   background-image: url('img/animated_text_fill.png');
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate2 10s linear infinite;
