@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta  http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>By lucas.exe</title>
+<link rel="stylesheet" href="style.css">
+<!-- ------------------ ABAIXO SEGUE EFEITO EM TÍTULO ----------------------------------------------->
+
+<script type="text/javascript">
+  t=1000; // Valor default pra cada titulo
+  tr=300; // tempo de espera pra mudar de titulo (fica com _ durante esse tempo)
+  title={
+    tag:['Vasos de Honra','Confraternização','está chegando! :-)','Entre em contato: ','hilvertoncesar@gmail.com','ronaldcontact2019@gmail.com','5','4','3','2','1','Go!'],
+    temp:[1400,1300,1100,,,,,,,,,,2000]
+  }; 
+  // title.temp só foi atribuido os três primeiros e o ultimo tempo, assim os outros terão o tempo default
+  b=title.tag;
+  c=title.temp;
+  d=b.length;
+  D=document;
+  e=-1;
+  p=D.title.lastIndexOf('|'); // Separador para que não seja alterado todo o titulo
+  if(p>-1)p=D.title.substr(0,p+2);else p='';
+  function titulo(){
+    e++;
+    if(e==d)e=0;
+    et(b[e]);
+  }
+  function t2(b,f){
+    var i=b.substr(0,--f);
+    D.title=p+i+'_';
+    if(f>=0)setTimeout('t2("'+i+'",'+f+')',50);
+    else setTimeout('titulo()',tr);
+  }
+  function et(b,i){
+    var l=b.length,f=(i)?i:0,i=b.substr(0,f)+'_';
+    D.title=p+i;
+    f++;
+    if(f<=l)setTimeout('et("'+b+'",'+f+')',50);
+    else setTimeout('t2("'+b+'","'+l+'")',c[e]||t);
+  }
+  titulo()
+  </script>
+
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<script language="javascript" src="janela.js"></script>                   
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<br>
+<a href="https://adalagoas.com.br/img.php?w=600&h=370&src=uploads/noticias/65ea75e3c6a0b9e35acdd5e9d27f5f089edb6fd1.jpg" style="margin-left: 10px; color: aqua">Departamento de Jovens Vasos de Honra </a> 
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------ -->
+
+<div>
+        <div>
+            <h1>Contagem Regressiva</h1>
+            <h3>Confraternização</h3>
+            <h4>Mocidade</h4>
+          <div class="time middle">
+            <span>
+              <div id="d">00</div>
+              Dias
+            </span>
+            <span>
+              <div id="h">00</div>
+              Horas
+            </span>
+            <span>
+              <div id="m">00</div>
+              Minutos
+            </span>
+            <span>
+              <div id="s">00</div>
+              Segundos
+            </span>
+          </div>
+        </div>
+      </div>
+      <script src="countdown.js"></script>
+
+</body>
+</html>
