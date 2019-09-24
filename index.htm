@@ -1,5 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">-->
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <meta  http-equiv="Content-Type" content="text/html; charset=utf-8" >
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
@@ -40,6 +42,21 @@
     if(f<=l)setTimeout('et("'+b+'",'+f+')',50);
     else setTimeout('t2("'+b+'","'+l+'")',c[e]||t);
   }
+
+  // Implementando efeito no link
+  function efeitoLink(){
+        id = document.getElementById("pulo").style;
+        if (typeof t == "undefined") t = 0;
+          switch (t % 5) {
+            case 0: {id.color = "#31F"; id.fontSize = "13px"; break}
+            case 1: {id.color = "#33F"; id.fontSize = "14px"; break}
+            case 2: {id.color = "#35F"; id.fontSize = "15px"; break}
+            case 3: {id.color = "#37F"; id.fontSize = "16px"; break}
+            case 4: {id.color = "#39F"; id.fontSize = "17px"; break}
+         }
+         t = setTimeout("efeitoLink()", 150);
+      }
+
   titulo()
   </script>
 
@@ -48,9 +65,9 @@
 <script language="javascript" src="janela.js"></script>                   
 </head>
 
-<body bgcolor="#FFFFFF" text="#000000">
+<body bgcolor="#FFFFFF" text="#000000" onload="efeitoLink()">
 <br>
-<a href="https://adalagoas.com.br/img.php?w=600&h=370&src=uploads/noticias/65ea75e3c6a0b9e35acdd5e9d27f5f089edb6fd1.jpg" style="margin-left: 10px; color: aqua">Departamento de Jovens Vasos de Honra </a> 
+<a  href="https://adalagoas.com.br/img.php?w=600&h=370&src=uploads/noticias/65ea75e3c6a0b9e35acdd5e9d27f5f089edb6fd1.jpg" id="pulo" style="text-decoration: none; position:absolute; margin-left: 15px; margin-top: 138px; color: aqua">Departamento de Jovens Vasos de Honra </a> 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 

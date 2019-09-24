@@ -1,4 +1,4 @@
-<!--
+
 function MM_showHideLayers() {
   var i,p,v,obj,args=MM_showHideLayers.arguments;
   for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
@@ -13,7 +13,7 @@ function MM_findObj(n, d) {
   if(!x && d.getElementById) x=d.getElementById(n); return x;
 }
 
-document.write('<div id="fechada" style="position:absolute;widht:100px;height:100px;left:10px;top:152px;visibility:visible;">')
+document.write('<div id="fechada" style="position:absolute;widht:100px;height:100px;left:15px;top:15px;visibility:visible;">')
 
 document.write('<table border=0 style="border:1px solid #f1f1f1;background-color:#990000;filter:Alpha(Opacity=200,FinishOpacity=80,Style=2,StartX=100,StartY=100,FinishX=100,FinishY=1);"><tr><td>')
 document.write('<table width="100" height="125" border="0" cellspacing="1" cellpadding="1">')
